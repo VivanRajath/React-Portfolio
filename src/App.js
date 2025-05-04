@@ -29,8 +29,7 @@ function App() {
       <Hero />
       <About />
       <Project/>
-      <h1>My First React App</h1>
-      <Greeting />
+
     </div>
   );
 }
