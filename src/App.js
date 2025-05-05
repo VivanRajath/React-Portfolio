@@ -1,9 +1,11 @@
 import React, { useState, useEffect } from 'react';
-import Greeting from './Greeting'; 
+
 import Navbar from './Navbar';  // Import the Navbar component
 import Hero from './Hero';
 import About from './About';
 import Project from './Project';
+import Contact from './Contact';
+import Footer from './Footer';
 
 function App() {
   const [isScrolled, setIsScrolled] = useState(false);
@@ -29,6 +31,8 @@ function App() {
       <Hero />
       <About />
       <Project/>
+      <Contact/>
+      <Footer/>
 
     </div>
   );
