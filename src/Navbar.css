@@ -1,4 +1,4 @@
-/* Navbar.css */
+/* Navbar Styles */
 .navbar {
   display: flex;
   justify-content: space-between;
@@ -26,6 +26,36 @@
   color: #feffff;
 }
 
+/* Menu Icon (Hamburger) */
+.menu-icon {
+  display: none;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  height: 25px;
+  cursor: pointer;
+}
+
+.bar {
+  width: 25px;
+  height: 3px;
+  background-color: white;
+  transition: transform 0.3s ease-in-out;
+}
+
+.bar.open:nth-child(1) {
+  transform: rotate(45deg) translate(5px, 5px);
+}
+
+.bar.open:nth-child(2) {
+  opacity: 0;
+}
+
+.bar.open:nth-child(3) {
+  transform: rotate(-45deg) translate(5px, -5px);
+}
+
+/* Navigation Links */
 .nav-links {
   list-style: none;
   display: flex;
@@ -43,4 +73,70 @@
 
 .nav-links a:hover {
   color: #00ffc8;
+}
+
+/* Active state for nav-links when menu is open */
+.nav-links.active {
+  display: flex;
+}
+
+.nav-links li {
+  padding: 10px;
+}
+
+/* Media Queries for responsiveness */
+@media (max-width: 768px) {
+  .nav-links {
+    display: none;
+    flex-direction: column;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.9);
+    position: absolute;
+    top: 60px;
+    left: 0;
+    right: 0;
+    padding: 20px;
+    gap: 15px;
+  }
+
+  .nav-links.active {
+    display: flex;
+  }
+
+  .navbar {
+    padding: 15px;
+  }
+
+  .logo {
+    font-size: 1.5rem;
+  }
+
+  .menu-icon {
+    display: flex;
+  }
+
+  .nav-links li {
+    text-align: center;
+  }
+}
+
+/* Small Screens */
+@media (max-width: 480px) {
+  .logo {
+    font-size: 1.25rem;
+  }
+
+  .footer-logo h3 {
+    font-size: 23px;
+    margin: 0 0 5px;
+    color: #3b82f6;
+  }
+
+  @media (max-width: 360px){
+    .footer-logo h3 {
+      font-size: 23px;
+      margin: 0 0 5px;
+      color: #3b82f6;
+    }
+  }
 }
