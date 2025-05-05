@@ -42,7 +42,7 @@ function About() {
             <p>
               I'm a certified <strong>Full Stack Web Developer </strong>with a passion for solving real-world problems
               through clean, efficient, and scalable web applications. When I'm not coding, you can find
-              me exploring new tech trends, writing blogs, or engaging in digital creativity.
+              me exploring new tech trends , Playing Guitar.
             </p>
 
             <h3 className="about-subtitle">My Skills</h3>
