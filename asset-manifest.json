@@ -1,16 +1,16 @@
 {
   "files": {
     "main.css": "/React-Portfolio/static/css/main.5e26ee2e.css",
-    "main.js": "/React-Portfolio/static/js/main.5ed4dd6c.js",
+    "main.js": "/React-Portfolio/static/js/main.d07e3c3a.js",
     "static/js/453.1407b060.chunk.js": "/React-Portfolio/static/js/453.1407b060.chunk.js",
     "static/media/passport-vivan.jpg": "/React-Portfolio/static/media/passport-vivan.c60df09ceb9cb94e5dbd.jpg",
     "index.html": "/React-Portfolio/index.html",
     "main.5e26ee2e.css.map": "/React-Portfolio/static/css/main.5e26ee2e.css.map",
-    "main.5ed4dd6c.js.map": "/React-Portfolio/static/js/main.5ed4dd6c.js.map",
+    "main.d07e3c3a.js.map": "/React-Portfolio/static/js/main.d07e3c3a.js.map",
     "453.1407b060.chunk.js.map": "/React-Portfolio/static/js/453.1407b060.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.5e26ee2e.css",
-    "static/js/main.5ed4dd6c.js"
+    "static/js/main.d07e3c3a.js"
   ]
 }
