@@ -27,7 +27,7 @@ function App() {
 
   return (
     <div>
-      <Navbar isScrolled={isScrolled} /> {/* Ensure the Navbar uses this */}
+      <Navbar isScrolled={isScrolled} />
       <Hero />
       <About />
       <Project/>

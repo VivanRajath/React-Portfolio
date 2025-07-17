@@ -1,38 +1,42 @@
 import React, { useState } from 'react';
 import './Project.css';
+import piezoImage from './images/piezo.jpg';
+import ASLimage from './images/ASL.jpeg';
+import Chayachitra from './images/Chayachitra.jpg'
 
 function Projects() {
-  // Sample project data - replace with your actual projects
+ 
   const projectsData = [
     {
       id: 1,
-      title: "Project-1",
-      description: "A fully responsive e-commerce platform with user authentication, product catalog, and payment integration.",
-      technologies: ["React", "Node.js", "MongoDB", "Express", "Stripe"],
-      imageUrl: "https://via.placeholder.com/600x400",
-      liveLink: "#",
-      codeLink: "#",
-      category: "web"
+      title: "Piezo Power Generation System",
+      description: "Our Mini Project where we utilized Piezo Sensors to Generate Power and built a prototype",
+      technologies: ["Arduino","Embedded C"],
+      imageUrl: piezoImage,
+      liveLink: "https://www.notion.so/Foot-Step-Power-Generation-System-Project-Overview-1ea952ee80e8800fafdfcb78d5416e74?pvs=4",
+      codeLink: "https://drive.google.com/file/d/1awDH5yHnw7pSIvrU_fU7alMNhgMaZD6Q/view?usp=drive_link",
+      category: "Arduino"
     },
+    
     {
       id: 2,
-      title: "Project-2",
-      description: "Real-time weather application that provides current conditions and forecasts based on user location.",
-      technologies: ["JavaScript", "HTML/CSS", "OpenWeather API"],
-      imageUrl: "https://via.placeholder.com/600x400",
-      liveLink: "#",
-      codeLink: "#",
-      category: "web"
+      title: "American Sign Language Detection System using Mediapipe",
+      description: "American Sign Language Detection System using Mediapipe and neural networks",
+      technologies: ["Machine Learning" , "Neural Netwrok", "Numpy" , "Mediapipe", "Random-Forest Classifier" ] ,
+      imageUrl: ASLimage,
+      liveLink: "https://github.com/VivanRajath/ASL",
+      codeLink: "https://github.com/VivanRajath/ASL",
+      category: "Machine Learning"
     },
     {
       id: 3,
-      title: "Project-3",
-      description: "A productivity application that helps users organize tasks, set priorities, and track progress.",
-      technologies: ["React", "Firebase", "Material UI"],
-      imageUrl: "https://via.placeholder.com/600x400",
+      title: "ChayaChitra - Image Generation Telegram Bot",
+      description: "A Telegram Bot which uses Hugginface Diffusers Library to generate images based on Prompt.",
+      technologies: ["HuggingFace", "Google-Colab", "Python"],
+      imageUrl: Chayachitra,
       liveLink: "#",
       codeLink: "#",
-      category: "web"
+      category: "Machine Learning"
     },
     {
       id: 4,
@@ -67,7 +71,7 @@ function Projects() {
   ];
 
   // Filter categories
-  const categories = ["all", "Websites", "Webapps", "Machine Learning","Arduino"];
+  const categories = ["all",  "Webapps", "Machine Learning", "Website-Templates", "SAR " ,"Arduino"];
   const [activeCategory, setActiveCategory] = useState("all");
 
   const filteredProjects = activeCategory === "all" 

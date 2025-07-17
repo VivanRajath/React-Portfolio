@@ -21,15 +21,15 @@ function About() {
                 src={profileImage}
                 alt="Vivan Rajath Nagasandra H"
                 className="profile-image"
+                loading="lazy"
               />
             </div>
-
           </div>
 
           <div className="about-text">
             <h3 className="about-subtitle">Who am I?</h3>
             <p>
-              I'm <strong> Vivan Rajath Nagasandra H </strong>, a passionate Full Stack Developer based in Bangalore.
+              I'm <strong>Vivan Rajath Nagasandra H</strong>, a passionate Full Stack Developer based in Bangalore.
               As an Electronics and Communication Engineering graduate, I bring a strong foundation
               in both hardware and software, with hands-on experience in building innovative tech solutions.
             </p>
@@ -40,12 +40,12 @@ function About() {
               tech exhibitions, and have published research papers based on my final year project.
             </p>
             <p>
-              I'm a certified <strong>Full Stack Web Developer </strong>with a passion for solving real-world problems
+              I'm a certified <strong>Full Stack Web Developer</strong> with a passion for solving real-world problems
               through clean, efficient, and scalable web applications. When I'm not coding, you can find
-              me exploring new tech trends, writing blogs, or engaging in digital creativity.
+              me exploring new tech trends and Playing Guitar.
             </p>
 
-            <h3 className="about-subtitle">My Skills</h3>
+            <h3 className="about-subtitle skills-subtitle">My Skills</h3>
             <div className="about-skills">
               {skills.map((skill, index) => (
                 <span key={index} className="skill-tag">{skill}</span>

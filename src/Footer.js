@@ -35,7 +35,7 @@ function Footer() {
         </div>
         <div className="footer-bottom">
           <div className="copyright">
-            &copy; {currentYear} Vivan's Portfolio. All rights reserved.
+            &copy; {currentYear} Vivan's. All rights reserved.
           </div>
           <div className="footer-social">
             <a href="https://github.com/" target="_blank" rel="noopener noreferrer" className="social-icon">
