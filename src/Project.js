@@ -124,4 +124,4 @@ function Projects() {
   );
 }
 
-export default Project;
+export default Projects;
