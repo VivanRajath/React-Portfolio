@@ -1,4 +1,4 @@
-<<<<<<< HEAD
+
 /* Projects.css */
 .projects-section {
   padding: 100px 20px;
@@ -184,7 +184,8 @@
   padding: 4px 10px;
   border-radius: 20px;
   font-size: 0.8rem;
-=======
+}
+
 /* Projects.css */
 .projects-section {
   padding: 100px 20px;
@@ -370,5 +371,5 @@
   padding: 4px 10px;
   border-radius: 20px;
   font-size: 0.8rem;
->>>>>>> 4b28888e44b58e7d058174a6f8f2b7bff9eb3d96
+
 }
