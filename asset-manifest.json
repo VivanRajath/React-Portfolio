@@ -1,16 +1,19 @@
 {
   "files": {
-    "main.css": "/React-Portfolio/static/css/main.5e26ee2e.css",
-    "main.js": "/React-Portfolio/static/js/main.d07e3c3a.js",
+    "main.css": "/React-Portfolio/static/css/main.b85eb918.css",
+    "main.js": "/React-Portfolio/static/js/main.b0dd48bf.js",
     "static/js/453.1407b060.chunk.js": "/React-Portfolio/static/js/453.1407b060.chunk.js",
     "static/media/passport-vivan.jpg": "/React-Portfolio/static/media/passport-vivan.c60df09ceb9cb94e5dbd.jpg",
+    "static/media/piezo.jpg": "/React-Portfolio/static/media/piezo.9c6e3533d4f6930d9ff5.jpg",
+    "static/media/Chayachitra.jpg": "/React-Portfolio/static/media/Chayachitra.9695fe50935380676c52.jpg",
+    "static/media/ASL.jpeg": "/React-Portfolio/static/media/ASL.b702f287d2df7bf2539d.jpeg",
     "index.html": "/React-Portfolio/index.html",
-    "main.5e26ee2e.css.map": "/React-Portfolio/static/css/main.5e26ee2e.css.map",
-    "main.d07e3c3a.js.map": "/React-Portfolio/static/js/main.d07e3c3a.js.map",
+    "main.b85eb918.css.map": "/React-Portfolio/static/css/main.b85eb918.css.map",
+    "main.b0dd48bf.js.map": "/React-Portfolio/static/js/main.b0dd48bf.js.map",
     "453.1407b060.chunk.js.map": "/React-Portfolio/static/js/453.1407b060.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.5e26ee2e.css",
-    "static/js/main.d07e3c3a.js"
+    "static/css/main.b85eb918.css",
+    "static/js/main.b0dd48bf.js"
   ]
 }
