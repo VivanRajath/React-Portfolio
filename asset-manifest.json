@@ -1,19 +1,24 @@
 {
   "files": {
-    "main.css": "/React-Portfolio/static/css/main.b85eb918.css",
-    "main.js": "/React-Portfolio/static/js/main.b0dd48bf.js",
+    "main.css": "/React-Portfolio/static/css/main.cea051ba.css",
+    "main.js": "/React-Portfolio/static/js/main.cfa83194.js",
     "static/js/453.1407b060.chunk.js": "/React-Portfolio/static/js/453.1407b060.chunk.js",
+    "static/media/speckle.jpg": "/React-Portfolio/static/media/speckle.3ee446c14b357759ae6b.jpg",
+    "static/media/Agri.jpg": "/React-Portfolio/static/media/Agri.e3bda073f2b7b38f6e6e.jpg",
     "static/media/passport-vivan.jpg": "/React-Portfolio/static/media/passport-vivan.c60df09ceb9cb94e5dbd.jpg",
+    "static/media/ML.jpg": "/React-Portfolio/static/media/ML.74242970ba431b2c16a9.jpg",
     "static/media/piezo.jpg": "/React-Portfolio/static/media/piezo.9c6e3533d4f6930d9ff5.jpg",
     "static/media/Chayachitra.jpg": "/React-Portfolio/static/media/Chayachitra.9695fe50935380676c52.jpg",
+    "static/media/RAGBOT.jpg": "/React-Portfolio/static/media/RAGBOT.b6dd69c600c4f7ca020d.jpg",
     "static/media/ASL.jpeg": "/React-Portfolio/static/media/ASL.b702f287d2df7bf2539d.jpeg",
+    "static/media/SAR1.jpg": "/React-Portfolio/static/media/SAR1.41520c2daf704c0eec9c.jpg",
     "index.html": "/React-Portfolio/index.html",
-    "main.b85eb918.css.map": "/React-Portfolio/static/css/main.b85eb918.css.map",
-    "main.b0dd48bf.js.map": "/React-Portfolio/static/js/main.b0dd48bf.js.map",
+    "main.cea051ba.css.map": "/React-Portfolio/static/css/main.cea051ba.css.map",
+    "main.cfa83194.js.map": "/React-Portfolio/static/js/main.cfa83194.js.map",
     "453.1407b060.chunk.js.map": "/React-Portfolio/static/js/453.1407b060.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.b85eb918.css",
-    "static/js/main.b0dd48bf.js"
+    "static/css/main.cea051ba.css",
+    "static/js/main.cfa83194.js"
   ]
 }
