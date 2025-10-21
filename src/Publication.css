@@ -1,0 +1,146 @@
+
+/* Publication.css */
+.publications-section {
+  min-height: 100vh;
+  background-color: #2d3748;
+  color: #fff;
+  padding: 80px 20px;
+  display: flex;
+  align-items: center;
+}
+
+.publications-container {
+  max-width: 1000px;
+  margin: 0 auto;
+  width: 100%;
+}
+
+.publications-header {
+  text-align: center;
+  margin-bottom: 64px;
+}
+
+.publications-title {
+  font-size: 2.5rem;
+  font-weight: 700;
+  margin-bottom: 12px;
+  color: #fff;
+  position: relative;
+  display: inline-block;
+}
+
+.publications-title::after {
+  content: '';
+  position: absolute;
+  left: 50%;
+  bottom: -16px;
+  transform: translateX(-50%);
+  width: 80px;
+  height: 4px;
+  background-color: #3b82f6;
+}
+
+.publications-subtitle {
+  color: #e2e8f0;
+  font-size: 1.125rem;
+  margin-top: 24px;
+}
+
+.publications-list {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+
+.publication-card {
+  background-color: #1a202c;
+  border-radius: 12px;
+  padding: 24px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  transition: all 0.3s ease;
+}
+
+.publication-card:hover {
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3);
+  transform: translateY(-2px);
+}
+
+.publication-content {
+  flex: 1;
+}
+
+.publication-title {
+  font-size: 1.25rem;
+  font-weight: 600;
+  color: #fff;
+  margin: 0 0 16px 0;
+  line-height: 1.6;
+}
+
+.publication-meta {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  flex-wrap: wrap;
+  color: #cbd5e0;
+  font-size: 0.9375rem;
+}
+
+.publication-venue {
+  color: #cbd5e0;
+}
+
+.publication-separator {
+  color: #4a5568;
+}
+
+.publication-year {
+  color: #60a5fa;
+  font-weight: 500;
+}
+
+.publication-action {
+  display: flex;
+  justify-content: flex-start;
+}
+
+.publication-link {
+  display: inline-block;
+  background-color: #3b82f6;
+  color: white;
+  text-decoration: none;
+  padding: 10px 24px;
+  border-radius: 8px;
+  font-weight: 600;
+  transition: background-color 0.2s ease;
+}
+
+.publication-link:hover {
+  background-color: #2563eb;
+}
+
+@media (min-width: 768px) {
+  .publication-card {
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: space-between;
+  }
+
+  .publication-action {
+    flex-shrink: 0;
+    margin-left: 24px;
+  }
+}
+
+@media (max-width: 767px) {
+  .publications-title {
+    font-size: 2rem;
+  }
+
+  .publication-title {
+    font-size: 1.125rem;
+  }
+}

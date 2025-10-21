@@ -296,7 +296,7 @@
 .project-image {
   width: 100%;
   height: 200px;
-  object-fit: cover;
+
   transition: transform 0.5s ease;
 }
 
@@ -372,4 +372,24 @@
   border-radius: 20px;
   font-size: 0.8rem;
 
+}
+
+.view-more-container {
+  text-align: center;
+  margin-top: 20px;
+}
+
+.view-more-btn {
+  background: #2563eb;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 8px;
+  cursor: pointer;
+  font-size: 16px;
+  transition: background 0.2s;
+}
+
+.view-more-btn:hover {
+  background: #1d4ed8;
 }

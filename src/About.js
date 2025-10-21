@@ -4,9 +4,8 @@ import profileImage from './images/passport-vivan.jpg';
 
 function About() {
   const skills = [
-    'Python', 'Django', 'Flask', 'HTML/CSS/Bootstrap 5', 'JavaScript', 'ASP.net',
-    'Java Core', 'Java Advanced', 'Digital Image Processing', 'Arduino', 'Micropython',
-    'MySQL', 'PostgreSQL'
+    'Python', 'Django', 'Machine Learning', 'Computer Vision', 'RAGs', 'LLMs', 'SAR', 'Flask', 'HTML/CSS/Bootstrap 5',
+    'Digital Image Processing', 'Arduino', 'Micropython'
   ];
 
   return (
@@ -29,21 +28,24 @@ function About() {
           <div className="about-text">
             <h3 className="about-subtitle">Who am I?</h3>
             <p>
-              I'm <strong>Vivan Rajath Nagasandra H</strong>, a passionate Full Stack Developer based in Bangalore.
-              As an Electronics and Communication Engineering graduate, I bring a strong foundation
-              in both hardware and software, with hands-on experience in building innovative tech solutions.
+              I'm <strong>Vivan Rajath Nagasandra H</strong>, an aspiring Machine Learning Engineer based in Bangalore with a background in Electronics and Communication Engineering.
+              My interest in Machine Learning and Deep Learning has led me to self-learn, experiment, and build practical AI solutions.
             </p>
             <p>
-              My journey in tech began during my pre-university days when I first explored HTML and CSS.
-              That curiosity grew into a deep interest in coding, leading me to develop machine learning
-              applications and algorithms during my engineering years. I actively participated in hackathons,
-              tech exhibitions, and have published research papers based on my final year project.
+              My journey began in pre-university with HTML and CSS, which gradually expanded into programming, algorithms, and Machine Learning.
+              During my engineering, I explored ML applications, took part in hackathons and tech exhibitions, and published research through my final year project.
             </p>
             <p>
-              I'm a certified <strong>Full Stack Web Developer</strong> with a passion for solving real-world problems
-              through clean, efficient, and scalable web applications. When I'm not coding, you can find
-              me exploring new tech trends and Playing Guitar.
+              I'm also a certified <strong>Full Stack Web Developer</strong>, combining web development with AI to build scalable and intelligent applications.
+              Whether it's designing a model or developing a web app, I focus on writing clean, purposeful code.
             </p>
+            <p>
+              While I don’t come from a traditional Computer Science background, my curiosity, persistence, and hands-on work guide my path toward becoming a Machine Learning Engineer.
+              Beyond coding, I enjoy exploring new technologies and playing the guitar.
+            </p>
+
+
+
 
             <h3 className="about-subtitle skills-subtitle">My Skills</h3>
             <div className="about-skills">
@@ -62,7 +64,7 @@ function About() {
                 <div className="timeline-date">2020 - 2024</div>
                 <div className="timeline-content">
                   <h4>Bachelors of Electronics and Communication Engineering</h4>
-                  <p>University/College Name</p>
+                  <p>East West College of Engineering</p>
                 </div>
               </div>
               <div className="timeline-item">
@@ -94,6 +96,18 @@ function About() {
                     <li>Progress Innovation Award</li>
                     <li>Built and Deployed Bootstrap 5 Websites for Clients</li>
                     <li>Built Agentic AI for Blog Posting using Automation Tools</li>
+                  </ul>
+                </div>
+              </div>
+              <div className="timeline-item">
+                <div className="timeline-date">Feb 2025 - Present</div>
+                <div className="timeline-content">
+                  <h4>Freelance Developer</h4>
+                  <p>Freelance</p>
+                  <ul>
+                    <li>Created ERP billing softwares to various local stores</li>
+                    <li>Creating Websites and automate workflow.</li>
+
                   </ul>
                 </div>
               </div>

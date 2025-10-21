@@ -5,7 +5,8 @@ import './Hero.css';
 
 function Hero() {
   const [text, setText] = useState('');
-  const [fullText, setFullText] = useState('Full Stack Developer');
+// eslint-disable-next-line no-unused-vars
+  const [fullText, setFullText] = useState('Machine Learning / Full Stack Developer');
   const [index, setIndex] = useState(0);
 
   // Typing effect
@@ -19,6 +20,19 @@ function Hero() {
       return () => clearTimeout(timeout);
     }
   }, [index, fullText]);
+
+  // Function to handle resume download
+  const handleResumeDownload = () => {
+    // Replace this URL with your actual Google Drive direct download link
+    const resumeUrl = 'https://drive.google.com/file/d/1avxW5_76R4LFn1LgA71BhoZZSwV_W-bk/view?usp=drive_link';
+    const link = document.createElement('a');
+    link.href = resumeUrl;
+    link.download = 'Vivan_Rajath_Resume.pdf'; // You can customize the filename
+    document.body.appendChild(link);
+    link.click();
+    document.body.removeChild(link);
+  };
+
   return (
     <div className="hero-container">
       <div className="hero-content">
@@ -33,18 +47,17 @@ function Hero() {
         </div>
 
         <p className="hero-description">
-          I build Websites and Apps.
-          Passionate about creating solutions that are both functional and beautiful.
+          I am a Machine Learning Enthusiast and a certfied Full-Stack Developer, I compute complex Machine learning algorithm and digest it with a Full-Stack Application.
         </p>
 
         <div className="hero-buttons">
-  <a href="#projects" className="hero-button primary">
-    View My Work
-  </a>
-  <a href="#contact" className="hero-button secondary">
-    Contact Me
-  </a>
-</div>
+          <a href="#projects" className="hero-button primary">
+            View My Work
+          </a>
+          <a href="#contact" className="hero-button secondary">
+            Contact Me
+          </a>
+        </div>
 
         <div className="hero-social">
           {/* GitHub */}
@@ -54,6 +67,7 @@ function Hero() {
               <path d="M9 18c-4.51 2-5-2-7-2"></path>
             </svg>
           </a>
+          
           {/* LinkedIn */}
           <a href="https://www.linkedin.com/in/vivan-rajath-178a6a348/" className="hero-social-link">
             <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
@@ -62,6 +76,7 @@ function Hero() {
               <circle cx="4" cy="4" r="2"></circle>
             </svg>
           </a>
+          
           {/* Email */}
           <a href="mailto:vivanrajath999@gmail.com" className="hero-social-link">
             <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
@@ -69,6 +84,17 @@ function Hero() {
               <path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"></path>
             </svg>
           </a>
+          
+          {/* Resume Download */}
+          <button onClick={handleResumeDownload} className="hero-social-link resume-download" title="Download Resume">
+            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
+              <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"></path>
+              <polyline points="14,2 14,8 20,8"></polyline>
+              <line x1="16" y1="13" x2="8" y2="13"></line>
+              <line x1="16" y1="17" x2="8" y2="17"></line>
+              <polyline points="10,9 9,9 8,9"></polyline>
+            </svg>
+          </button>
         </div>
       </div>
 
@@ -81,6 +107,6 @@ function Hero() {
       </div>
     </div>
   );
-
 }
+
 export default Hero;

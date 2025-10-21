@@ -4,8 +4,11 @@ import Navbar from './Navbar';  // Import the Navbar component
 import Hero from './Hero';
 import About from './About';
 import Project from './Project';
+import Publication from './Publication';
 import Contact from './Contact';
+import Chatbot from './Chatbot'; 
 import Footer from './Footer';
+import Credentials from './Credentials';
 
 function App() {
   const [isScrolled, setIsScrolled] = useState(false);
@@ -30,9 +33,14 @@ function App() {
       <Navbar isScrolled={isScrolled} />
       <Hero />
       <About />
-      <Project/>
+      <Publication />
+      <Project />
+      <Credentials/>
       <Contact/>
       <Footer/>
+      <Chatbot />
+      
+
 
     </div>
   );
