@@ -84,20 +84,7 @@ function Contact() {
               Have questions or want to discuss a project? My AI chatbot is available 24/7 
               to help answer your queries and connect you with me directly.
             </p>
-            <div className="chatbot-features">
-              <div className="feature-item">
-                <span className="feature-icon">⚡</span>
-                <span>Instant responses</span>
-              </div>
-              <div className="feature-item">
-                <span className="feature-icon">🤖</span>
-                <span>AI-powered assistance</span>
-              </div>
-              <div className="feature-item">
-                <span className="feature-icon">💬</span>
-                <span>Direct communication</span>
-              </div>
-            </div>
+            
             <button 
               className="chatbot-link"
               onClick={() => {

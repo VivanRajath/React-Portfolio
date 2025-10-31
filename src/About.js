@@ -41,7 +41,7 @@ function About() {
             </p>
             <p>
               While I don’t come from a traditional Computer Science background, my curiosity, persistence, and hands-on work guide my path toward becoming a Machine Learning Engineer.
-              Beyond coding, I enjoy exploring new technologies and playing the guitar.
+              Beyond coding, I enjoy exploring new technologies and playing guitar.
             </p>
 
 
