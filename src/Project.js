@@ -8,9 +8,24 @@ import SAR1 from './images/SAR1.jpg';
 import Agri from './images/Agri.jpg';
 import speckle from './images/speckle.jpg';
 import ML from './images/ML.jpg';
+import GitBot from './images/Gitbot.jpg'; 
 
 function Projects() {
   const projectsData = [
+    {
+      id: 9,
+      title: "GitBot - Code Review Agent",
+      description: "A Full-stack application integrated with Agentic AI to perform code reviews , Auto code push , PR Analysis and more.",
+      technologies: ["Python", "Agentic AI", "Django"],
+      imageUrl: GitBot,
+      liveLink: "https://github.com/VivanRajath/codereviewer",
+      codeLink: "https://codereviewer-0nfb.onrender.com/",
+      category: "AI Apps"
+    },
+
+
+
+
     {
       id: 1,
       title: "Piezo Power Generation System",
@@ -91,14 +106,15 @@ function Projects() {
       liveLink: "https://www.linkedin.com/posts/vivan-rajath-178a6a348_sar-specklenoise-remotesensing-activity-7345443500412289025-1cSP?utm_source=share&utm_medium=member_desktop&rcm=ACoAAFcComwBoMczZvjuC3GD2YbAI-xQeoxIeSw",
       codeLink: "https://colab.research.google.com/drive/1f1KHuTVKRxN6",
       category: "SAR"
-    }
+    },
 
+    
 
 
   ];
-  const categories = ["all", "ML", "SAR", "Webapps", "Arduino"];
+  const categories = ["all", "ML-CV", "SAR","AI Apps", "Blogs", "Arduino" , "Templates"];
   const [activeCategory, setActiveCategory] = useState("all");
-  const [showAll, setShowAll] = useState(false); // ✅ state to toggle view more
+  const [showAll, setShowAll] = useState(false); 
 
   const filteredProjects = activeCategory === "all"
     ? projectsData
@@ -111,7 +127,7 @@ function Projects() {
   return (
     <section id="projects" className="projects-section">
       <div className="projects-container">
-        <h2 className="projects-title">My Projects</h2>
+        <h2 className="projects-title">My Works</h2>
         <p className="projects-subtitle">Here are some of my recent works</p>
 
         <div className="projects-filter">
