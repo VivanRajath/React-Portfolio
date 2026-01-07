@@ -28,22 +28,24 @@ function About() {
           <div className="about-text">
             <h3 className="about-subtitle">Who am I?</h3>
             <p>
-              I'm <strong>Vivan Rajath Nagasandra H</strong>, an aspiring Machine Learning Engineer based in Bangalore with a background in Electronics and Communication Engineering.
-              My interest in Machine Learning and Deep Learning has led me to self-learn, experiment, and build practical AI solutions.
-            </p>
-            <p>
-              My journey began in pre-university with HTML and CSS, which gradually expanded into programming, algorithms, and Machine Learning.
-              During my engineering, I explored ML applications, took part in hackathons and tech exhibitions, and published research through my final year project.
-            </p>
-            <p>
-              I'm also a certified <strong>Full Stack Web Developer</strong>, combining web development with AI to build scalable and intelligent applications.
-              Whether it's designing a model or developing a web app, I focus on writing clean, purposeful code.
-            </p>
-            <p>
-              While I don’t come from a traditional Computer Science background, my curiosity, persistence, and hands-on work guide my path toward becoming a Machine Learning Engineer.
-              Beyond coding, I enjoy exploring new technologies and playing guitar.
+              I’m <strong>Vivan Rajath Nagasandra H</strong>, a GenAI and Machine Learning-focused software developer based in Bangalore, with a background in Electronics and Communication Engineering.
+              I work at the intersection of backend systems and applied AI, building production-ready automation platforms, RAG systems, and intelligent services.
             </p>
 
+            <p>
+              My technical journey began early with HTML and CSS, evolving into strong foundations in programming, algorithms, backend engineering, and machine learning.
+              During my engineering years, I actively explored applied ML, participated in hackathons and exhibitions, and published research in ML-based systems as part of my final-year work.
+            </p>
+
+            <p>
+              I am also a certified <strong>Full Stack Web Developer</strong>, experienced in designing scalable APIs, automation pipelines, and AI-integrated web applications using frameworks like Django, FastAPI, and modern ML stacks.
+              I prioritize clean architecture, performance, and maintainability in every system I build.
+            </p>
+
+            <p>
+              While my academic background is not traditional Computer Science, my hands-on experience, continuous self-learning, and problem-driven approach shape my path toward becoming a strong Machine Learning and GenAI Engineer.
+              Outside of work, I enjoy exploring emerging technologies and playing guitar.
+            </p>
 
 
 

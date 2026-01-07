@@ -6,7 +6,7 @@ import './Hero.css';
 function Hero() {
   const [text, setText] = useState('');
 // eslint-disable-next-line no-unused-vars
-  const [fullText, setFullText] = useState('Machine Learning / Full Stack Developer');
+  const [fullText, setFullText] = useState('Gen AI / Full Stack Developer');
   const [index, setIndex] = useState(0);
 
   // Typing effect
@@ -47,7 +47,7 @@ function Hero() {
         </div>
 
         <p className="hero-description">
-          I am a Machine Learning Enthusiast and a certfied Full-Stack Developer, I compute complex Machine learning algorithm and digest it with a Full-Stack Application.
+          I am GenAI Full-Stack Developer, I build intelligent web applications and automation systems that leverage the power of Generative AI to solve real-world problems.
         </p>
 
         <div className="hero-buttons">
