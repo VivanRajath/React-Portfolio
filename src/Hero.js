@@ -6,7 +6,7 @@ import './Hero.css';
 function Hero() {
   const [text, setText] = useState('');
 // eslint-disable-next-line no-unused-vars
-  const [fullText, setFullText] = useState('Gen AI / Full Stack Developer');
+  const [fullText, setFullText] = useState('Full-Stack AI Engineer · LLM & Agentic Systems');
   const [index, setIndex] = useState(0);
 
   // Typing effect
@@ -34,10 +34,10 @@ function Hero() {
   };
 
   return (
-    <div className="hero-container">
+    <div id="home" className="hero-container">
       <div className="hero-content">
         <h1 className="hero-title">
-          Hi, I'm <span className="hero-highlight">Vivan Rajath Nagasandra H</span>
+          Hi, I'm <span className="hero-highlight">Vivan Rajath</span>
         </h1>
 
         <div className="hero-typed-container">
@@ -47,7 +47,7 @@ function Hero() {
         </div>
 
         <p className="hero-description">
-          I am GenAI Full-Stack Developer, I build intelligent web applications and automation systems that leverage the power of Generative AI to solve real-world problems.
+          I build LLM-powered agentic systems, RAG pipelines and sandboxed code-execution infrastructure end to end, from React/Next.js interfaces down to Go and Python services and the infrastructure they run on.
         </p>
 
         <div className="hero-buttons">

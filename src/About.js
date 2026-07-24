@@ -3,9 +3,23 @@ import './About.css';
 import profileImage from './images/passport-vivan.jpg';
 
 function About() {
-  const skills = [
-    'Python', 'Django', 'Machine Learning', 'Computer Vision', 'RAGs', 'LLMs', 'SAR', 'Flask', 'HTML/CSS/Bootstrap 5',
-    'Digital Image Processing', 'Arduino', 'Micropython'
+  const skillGroups = [
+    {
+      label: 'Frontend',
+      items: ['React', 'Next.js', 'TypeScript', 'WebSockets', 'Monaco', 'xterm.js', 'Bootstrap 5'],
+    },
+    {
+      label: 'Backend & Languages',
+      items: ['Python', 'Go', 'Node.js', 'FastAPI', 'Django', 'SQL'],
+    },
+    {
+      label: 'AI & LLMs',
+      items: ['LangGraph', 'LangChain', 'RAG', 'Multi-Agent Orchestration', 'Hugging Face', 'PyTorch', 'TensorFlow', 'Computer Vision'],
+    },
+    {
+      label: 'Data & Infra',
+      items: ['PostgreSQL', 'Redis', 'MongoDB', 'Chroma DB', 'Pinecone', 'Docker', 'CI/CD', 'AWS', 'GCP'],
+    },
   ];
 
   return (
@@ -28,31 +42,28 @@ function About() {
           <div className="about-text">
             <h3 className="about-subtitle">Who am I?</h3>
             <p>
-              I’m <strong>Vivan Rajath Nagasandra H</strong>, a GenAI and Machine Learning-focused software developer based in Bangalore, with a background in Electronics and Communication Engineering.
-              I work at the intersection of backend systems and applied AI, building production-ready automation platforms, RAG systems, and intelligent services.
+              I&apos;m <strong>Vivan Rajath Nagasandra H</strong>, a full-stack AI engineer based in Bangalore who owns products end to end, from React/Next.js interfaces down to Go and Python services and the infrastructure they run on. I specialize in LLM-powered agentic systems, RAG pipelines and sandboxed code-execution infrastructure.
             </p>
 
             <p>
-              My technical journey began early with HTML and CSS, evolving into strong foundations in programming, algorithms, backend engineering, and machine learning.
-              During my engineering years, I actively explored applied ML, participated in hackathons and exhibitions, and published research in ML-based systems as part of my final-year work.
+              I&apos;ve built real-time, browser-heavy systems: a cloud IDE with live WebSocket terminal streaming, multi-agent pipelines that autonomously edit codebases, and production RAG applications. I care about clean architecture, performance and maintainability, and I ship fast, usually solo, from first prototype to a deployed product.
             </p>
 
             <p>
-              I am also a certified <strong>Full Stack Web Developer</strong>, experienced in designing scalable APIs, automation pipelines, and AI-integrated web applications using frameworks like Django, FastAPI, and modern ML stacks.
-              I prioritize clean architecture, performance, and maintainability in every system I build.
+              I&apos;m an open-source contributor and published researcher: I&apos;ve shipped developer tooling to PyPI and npm, merged contributions into agent frameworks, and published ML research in a SCOPUS-indexed journal. Outside of work I explore emerging AI tooling and play guitar.
             </p>
 
-            <p>
-              While my academic background is not traditional Computer Science, my hands-on experience, continuous self-learning, and problem-driven approach shape my path toward becoming a strong Machine Learning and GenAI Engineer.
-              Outside of work, I enjoy exploring emerging technologies and playing guitar.
-            </p>
-
-
-
-            <h3 className="about-subtitle skills-subtitle">My Skills</h3>
-            <div className="about-skills">
-              {skills.map((skill, index) => (
-                <span key={index} className="skill-tag">{skill}</span>
+            <h3 className="about-subtitle skills-subtitle">Technical Skills</h3>
+            <div className="about-skill-groups">
+              {skillGroups.map((group) => (
+                <div className="skill-group" key={group.label}>
+                  <span className="skill-group-label">{group.label}</span>
+                  <div className="about-skills">
+                    {group.items.map((skill, index) => (
+                      <span key={index} className="skill-tag">{skill}</span>
+                    ))}
+                  </div>
+                </div>
               ))}
             </div>
           </div>
@@ -90,26 +101,35 @@ function About() {
             <h3 className="about-subtitle">Experience</h3>
             <div className="timeline">
               <div className="timeline-item">
+                <div className="timeline-date">Feb 2025 - Present</div>
+                <div className="timeline-content">
+                  <h4>Freelance Full-Stack AI Engineer</h4>
+                  <p>LCC, Bangalore</p>
+                  <ul>
+                    <li>Designed, built and deployed a Django/PostgreSQL ERP &amp; inventory system with E-Way Bill compliance for production use.</li>
+                    <li>Shipped SankhyaArtha, a React + FastAPI billing platform, Docker-deployed with CI/CD on Linux servers.</li>
+                    <li>Published developer tooling to PyPI (sandbox-engine-cli) and npm (claw2md, 450+ downloads).</li>
+                  </ul>
+                </div>
+              </div>
+              <div className="timeline-item">
                 <div className="timeline-date">Sep 2024 - Feb 2025</div>
                 <div className="timeline-content">
                   <h4>Trainee Developer</h4>
                   <p>Siva Complete Solutions Pvt Ltd</p>
                   <ul>
-                    <li>Progress Innovation Award</li>
-                    <li>Built and Deployed Bootstrap 5 Websites for Clients</li>
-                    <li>Built Agentic AI for Blog Posting using Automation Tools</li>
+                    <li>Built a Python automation system that cut a recurring workflow from ~half a day to 41 minutes (~8x faster).</li>
+                    <li>Received the Progress Innovation Award for a production-ready automation solution.</li>
                   </ul>
                 </div>
               </div>
               <div className="timeline-item">
-                <div className="timeline-date">Feb 2025 - Present</div>
+                <div className="timeline-date">Aug 2023 - Sep 2023</div>
                 <div className="timeline-content">
-                  <h4>Freelance Developer</h4>
-                  <p>Freelance</p>
+                  <h4>Engineering Intern</h4>
+                  <p>Bharat Electronics Limited (Milcom SBU)</p>
                   <ul>
-                    <li>Created ERP billing softwares to various local stores</li>
-                    <li>Creating Websites and automate workflow.</li>
-
+                    <li>Exposure to defense-grade electronic systems and engineering workflows in the Military Communications unit.</li>
                   </ul>
                 </div>
               </div>

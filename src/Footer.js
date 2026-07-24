@@ -23,7 +23,7 @@ function Footer() {
             <div className="footer-brand">
               <div className="brand-content">
                 <h2>Vivan Rajath Nagasandra H</h2>
-                <p className="brand-tagline">Machine Learning / Full Stack Developer</p>
+                <p className="brand-tagline">Full-Stack AI Engineer · LLM &amp; Agentic Systems</p>
                 <div className="brand-accent"></div>
               </div>
             </div>
@@ -32,7 +32,7 @@ function Footer() {
               <div className="nav-section">
                 <h4>Navigation</h4>
                 <div className="nav-links">
-                  <a href="#" className="nav-link">Home</a>
+                  <a href="#home" className="nav-link">Home</a>
                   <a href="#about" className="nav-link">About</a>
                   <a href="#projects" className="nav-link">Projects</a>
                   <a href="#contact" className="nav-link">Contact</a>
@@ -44,7 +44,6 @@ function Footer() {
                 <div className="nav-links">
                   <a href="https://github.com/VivanRajath" target="_blank" rel="noopener noreferrer" className="nav-link">GitHub</a>
                   <a href="https://www.linkedin.com/in/vivan-rajath-178a6a348/" target="_blank" rel="noopener noreferrer" className="nav-link">LinkedIn</a>
-                  <a href="https://twitter.com/" target="_blank" rel="noopener noreferrer" className="nav-link">Twitter</a>
                   <a href="mailto:vivanrajath999@gmail.com" className="nav-link">Email</a>
                 </div>
               </div>
@@ -64,11 +63,6 @@ function Footer() {
                   <path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"></path>
                   <rect x="2" y="9" width="4" height="12"></rect>
                   <circle cx="4" cy="4" r="2"></circle>
-                </svg>
-              </a>
-              <a href="https://twitter.com/" target="_blank" rel="noopener noreferrer" className="social-link">
-                <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round">
-                  <path d="M22 4s-.7 2.1-2 3.4c1.6 10-9.4 17.3-18 11.6 2.2.1 4.4-.6 6-2C3 15.5.5 9.6 3 5c2.2 2.6 5.6 4.1 9 4-.9-4.2 4-6.6 7-3.8 1.1 0 3-1.2 3-1.2z"></path>
                 </svg>
               </a>
               <a href="mailto:vivanrajath999@gmail.com" className="social-link">

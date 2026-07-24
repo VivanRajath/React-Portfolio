@@ -43,7 +43,7 @@
 
 @media (min-width: 768px) {
   .hero-title {
-    font-size: 45 px;
+    font-size: 3rem;
   }
 }
 
@@ -52,8 +52,11 @@
 }
 
 .hero-typed-container {
-  height: 2.25rem;
+  min-height: 2.25rem;
   margin-bottom: 1.75rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .hero-subtitle {

@@ -7,7 +7,7 @@ function Chatbot() {
     const [messages, setMessages] = useState([
         {
             sender: "bot",
-            text: "Hi 👋 I'm Vivan's AI assistant! Ask me anything about his resume, projects, skills, or experience!",
+            text: "Hi, I'm Vivan's AI assistant. Ask me anything about his projects, skills, experience or research.",
             type: "text"
         }
     ]);
@@ -31,13 +31,13 @@ function Chatbot() {
 
     // Suggestion buttons
     const suggestions = [
-        "📋 Show all projects",
-        "💻 What are his skills?",
-        "🎓 Education background",
-        "💼 Work experience",
-        "🏆 Achievements & Awards",
-        "📄 Publications",
-        "🚀 Tell me about hackathons",
+        "Show all projects",
+        "What are his skills?",
+        "What agentic AI has he built?",
+        "Work experience",
+        "Developer tools",
+        "Publications",
+        "Tell me about hackathons",
         "Contact"
     ];
 
@@ -118,7 +118,7 @@ function Chatbot() {
                 <div key={index} className="chatbot-message bot">
                     <div className="chatbot-bubble bot-bubble">
                         <div className="project-list-header">
-                            📋 <strong>Vivan's Projects</strong>
+                            <strong>Vivan's Projects</strong>
                         </div>
                         <div className="project-buttons">
                             {parsedContent.projects.map((project, i) => (
@@ -168,29 +168,41 @@ function Chatbot() {
                     for (let i = 0; i < splitParts.length; i++) {
                         if (i > 0) {
                             // Determine link type and create appropriate button
-                            let buttonText = "🔗 Open Link";
+                            let buttonText = "Open Link";
                             let buttonClass = "link-button";
 
                             if (link.includes('github.com')) {
-                                buttonText = "💻 View Code";
+                                buttonText = "View Code";
                                 buttonClass = "link-button github";
+                            } else if (link.includes('huggingface.co')) {
+                                buttonText = "Model Weights";
+                                buttonClass = "link-button demo";
+                            } else if (link.includes('npmjs.com')) {
+                                buttonText = "npm Package";
+                                buttonClass = "link-button github";
+                            } else if (link.includes('pypi.org')) {
+                                buttonText = "PyPI Package";
+                                buttonClass = "link-button github";
+                            } else if (link.includes('thegrenze.com')) {
+                                buttonText = "Read Paper";
+                                buttonClass = "link-button notion";
                             } else if (link.includes('notion.so')) {
-                                buttonText = "📖 Read Blog";
+                                buttonText = "Read Blog";
                                 buttonClass = "link-button notion";
                             } else if (link.includes('t.me')) {
-                                buttonText = "🤖 Try Bot";
+                                buttonText = "Try Bot";
                                 buttonClass = "link-button telegram";
                             } else if (link.includes('colab')) {
-                                buttonText = "🔬 Open Notebook";
+                                buttonText = "Open Notebook";
                                 buttonClass = "link-button colab";
                             } else if (link.includes('render.com')) {
-                                buttonText = "🌐 Live Demo";
+                                buttonText = "Live Demo";
                                 buttonClass = "link-button demo";
                             } else if (link.includes('drive.google.com')) {
-                                buttonText = "📁 View Files";
+                                buttonText = "View Files";
                                 buttonClass = "link-button drive";
                             } else if (link.includes('linkedin.com')) {
-                                buttonText = "💼 LinkedIn Post";
+                                buttonText = "LinkedIn Post";
                                 buttonClass = "link-button linkedin";
                             }
 
@@ -239,10 +251,15 @@ function Chatbot() {
         setSuggestionsOpen(false);
 
         try {
+            // Send recent turns so the LLM can handle follow-ups in context.
+            const history = messages
+                .slice(-8)
+                .map((m) => ({ sender: m.sender, text: m.text }));
+
             const response = await fetch(`${backendUrl}/ask`, {
                 method: "POST",
                 headers: { "Content-Type": "application/json" },
-                body: JSON.stringify({ question: message })
+                body: JSON.stringify({ question: message, history })
             });
 
             const result = await response.json();
@@ -252,7 +269,7 @@ function Chatbot() {
             console.error("Error calling FastAPI backend:", err);
             setMessages((prev) => [
                 ...prev,
-                { sender: "bot", text: "⚠️ Error connecting to AI backend. Please try again!" }
+                { sender: "bot", text: "Error connecting to the AI backend. Please try again." }
             ]);
         } finally {
             setLoading(false);
@@ -299,12 +316,8 @@ function Chatbot() {
                 {/* Floating Chat Icon */}
                 <div className="chatbot-icon" onClick={toggleChat}>
                     <div className="chatbot-icon-content">
-                        <span className="chatbot-icon-emoji">🤖</span>
                         <span className="chatbot-icon-text">Chat with Vivan's AI</span>
                     </div>
-                    {!isOpen && (
-                        <div className="notification-badge">💬</div>
-                    )}
                 </div>
 
                 {/* Chat Window */}
@@ -312,10 +325,10 @@ function Chatbot() {
                     <div className="chatbot-container">
                         <div className="chatbot-header">
                             <div className="header-content">
-                                <span className="header-title">🤖 Vivan's AI Assistant</span>
+                                <span className="header-title">Vivan's AI Assistant</span>
                                 <span className="header-status">Online</span>
                             </div>
-                            <button className="close-btn" onClick={toggleChat}>✖</button>
+                            <button className="close-btn" onClick={toggleChat}>×</button>
                         </div>
 
                         <div className="chatbot-messages">
@@ -324,7 +337,7 @@ function Chatbot() {
                                 <div className="chatbot-message bot">
                                     <div className="chatbot-bubble bot-bubble">
                                         <div className="typing-indicator">
-                                            <span>🤖 Thinking</span>
+                                            <span>Thinking</span>
                                             <div className="typing-dots">
                                                 <span></span>
                                                 <span></span>
@@ -343,7 +356,7 @@ function Chatbot() {
                                 className="suggestions-toggle-button"
                                 onClick={toggleSuggestions}
                             >
-                                <span>💡 Quick questions</span>
+                                <span>Quick questions</span>
                                 <span className={`suggestions-arrow ${suggestionsOpen ? 'open' : ''}`}>
                                     ▼
                                 </span>
@@ -377,7 +390,7 @@ function Chatbot() {
                                 disabled={loading || !input.trim()}
                                 className="send-button"
                             >
-                                {loading ? "⏳" : "Send"}
+                                {loading ? "..." : "Send"}
                             </button>
                         </div>
                     </div>

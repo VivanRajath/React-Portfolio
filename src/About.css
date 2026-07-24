@@ -136,19 +136,35 @@
   text-align: left;
 }
 
+.about-skill-groups {
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+  margin-top: 20px;
+}
+
+.skill-group-label {
+  display: block;
+  color: #93c5fd;
+  font-size: 0.8rem;
+  font-weight: 600;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  margin-bottom: 10px;
+}
+
 .about-skills {
   display: flex;
   flex-wrap: wrap;
   gap: 10px;
-  margin-top: 20px;
 }
 
 .skill-tag {
   background-color: rgba(79, 70, 229, 0.2);
   color: #93c5fd;
-  padding: 8px 15px;
+  padding: 7px 14px;
   border-radius: 20px;
-  font-size: 0.9rem;
+  font-size: 0.85rem;
   font-weight: 500;
   border: 1px solid rgba(147, 197, 253, 0.3);
 }
@@ -426,4 +442,67 @@
     margin-bottom: 5px;
     color: #9ca3af;
   }
+
+/* --- Technical skills: clean, restrained layout (overrides the pill styles above) --- */
+.about-skill-groups {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  margin-top: 22px;
+}
+
+.skill-group {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+@media (min-width: 640px) {
+  .skill-group {
+    flex-direction: row;
+    align-items: baseline;
+    gap: 18px;
+  }
+}
+
+.skill-group-label {
+  display: block;
+  color: #64748b;
+  font-size: 0.72rem;
+  font-weight: 700;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  margin-bottom: 0;
+  flex-shrink: 0;
+}
+
+@media (min-width: 640px) {
+  .skill-group-label {
+    width: 150px;
+    padding-top: 2px;
+  }
+}
+
+.about-skills {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  margin-top: 0;
+}
+
+.skill-tag {
+  background-color: rgba(255, 255, 255, 0.04);
+  color: #cbd5e0;
+  padding: 5px 12px;
+  border-radius: 6px;
+  font-size: 0.82rem;
+  font-weight: 500;
+  border: 1px solid rgba(255, 255, 255, 0.09);
+  transition: border-color 0.2s ease, color 0.2s ease;
+}
+
+.skill-tag:hover {
+  color: #fff;
+  border-color: rgba(59, 130, 246, 0.5);
+}
 

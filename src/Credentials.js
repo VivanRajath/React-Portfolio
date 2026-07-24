@@ -36,7 +36,7 @@ function Credentials() {
         },
         {
             title: "SCOPUS Publication",
-            organization: "Akshaya Institue of Technology",
+            organization: "Akshaya Institute of Technology",
             description: "Indexed our Major Project Object Sorting using Machine Learning under Scopus Journal",
             date: "July 2024",
             icon: (
